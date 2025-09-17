@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design with Flexbox & Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container text-center">
+            <h1>Responsive Web Design</h1>
+            <p>Mastering Flexbox, Grid & Media Queries</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">RWD</div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-grid"></i> Layouts</a></li>
+                <li><a href="#"><i class="fas fa-code"></i> Techniques</a></li>
+                <li><a href="#"><i class="fas fa-mobile-alt"></i> Responsive</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Layout using CSS Grid -->
+    <main class="container main-grid">
+        <!-- Left Sidebar -->
+        <aside class="sidebar sidebar-left">
+            <div class="sidebar-widget">
+                <h3>Layout Techniques</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Flexbox</a></li>
+                    <li><a href="#">CSS Grid</a></li>
+                    <li><a href="#">Floats</a></li>
+                    <li><a href="#">Positioning</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Responsive Patterns</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Mostly Fluid</a></li>
+                    <li><a href="#">Column Drop</a></li>
+                    <li><a href="#">Layout Shifter</a></li>
+                    <li><a href="#">Off-Canvas</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <h2>Modern CSS Layout Techniques</h2>
+            <p>This page demonstrates responsive web design principles using Flexbox and CSS Grid. Resize your browser to see how the layout adapts to different screen sizes.</p>
+            
+            <!-- Cards using Flexbox -->
+            <h3>Flexbox Card Layout</h3>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>Flexbox</h4>
+                        <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+                        <div class="tags">
+                            <span class="tag">Layout</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-grid"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>CSS Grid</h4>
+                        <p>CSS Grid is a two-dimensional layout system, perfect for overall page layout.</p>
+                        <div class="tags">
+                            <span class="tag">Grid</span>
+                            <span class="tag">2D Layout</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-img">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="card-content">
+                        <h4>Responsive Design</h4>
+                        <p>Create websites that work on all device sizes using media queries and fluid layouts.</p>
+                        <div class="tags">
+                            <span class="tag">Media Queries</span>
+                            <span class="tag">Fluid</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonials using Grid -->
+            <h3>Testimonials</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Learning Flexbox and Grid completely changed how I approach web layout. It's so much more efficient than older methods!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"The combination of Grid for overall layout and Flexbox for components is a powerful approach to responsive design."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JS</div>
+                        <div class="author-info">
+                            <h4>Jane Smith</h4>
+                            <p>UI Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"Media queries make it possible to create truly adaptive layouts that work on everything from mobile phones to large monitors."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RJ</div>
+                        <div class="author-info">
+                            <h4>Robert Johnson</h4>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar sidebar-right">
+            <div class="sidebar-widget">
+                <h3>Upcoming Events</h3>
+                <div class="event">
+                    <h4>CSS Conference</h4>
+                    <p><i class="far fa-calendar"></i> June 15, 2023</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Online</p>
+                </div>
+                <div class="event">
+                    <h4>Web Layout Workshop</h4>
+                    <p><i class="far fa-calendar"></i> July 22, 2023</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Francisco</p>
+                </div>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>Subscribe</h3>
+                <p>Stay updated with the latest web design trends and techniques.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About RWD</h3>
+                    <p>We're dedicated to teaching responsive web design techniques using modern CSS layout methods.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Layouts</a></li>
+                        <li><a href="#">Techniques</a></li>
+                        <li><a href="#">Responsive</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Responsive Web Design. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
